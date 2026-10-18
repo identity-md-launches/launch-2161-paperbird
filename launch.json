@@ -1,0 +1,24 @@
+{
+  "kind": "custom_token",
+  "token": {
+    "contract": "PaperbirdToken",
+    "name": "paperbird",
+    "symbol": "PAPERBIR",
+    "decimals": 18,
+    "constructorArgs": [],
+    "totalSupply": "1000000000000000000000000000"
+  },
+  "contracts": [],
+  "pool": {
+    "pairedCurrency": "0xd34a99bc0f67ae1bbd63c660e6d0b0dd03e263b7",
+    "fee": 12500,
+    "tickSpacing": 60,
+    "initialPrice": "79228162514264337593543950336"
+  },
+  "economics": {
+    "poolBps": 6000,
+    "initialMarketCapWei": "800000000000000000000",
+    "remainderTo": "0xee2aaa315cf7ed169f93148d30d24af9318dbb66"
+  },
+  "notes": "PaperbirdToken takes no constructor arguments and mints 1,000,000,000 PAPERBIR with 18 decimals once to msg.sender, the factory at launch. It supports ERC-20 transfers, allowance-based burning and ERC-2612 permit, with no owner, administrative controls, transfer fees or further minting. No application contracts are deployed. pool.initialPrice records provenance only; the deployer derives the opening price from economics.initialMarketCapWei and token.totalSupply."
+}
